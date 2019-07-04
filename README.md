@@ -7,7 +7,7 @@ This application developed for a WebDev Course COSC 630. The Ruby on Rails appli
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version - 2.5.5
 
 * System dependencies
 
@@ -22,5 +22,3 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...

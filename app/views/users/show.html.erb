@@ -1,2 +1,12 @@
 
-<%= @user.name %>, <%= @user.email %> 
+<header class="masthead">
+
+<% provide(:title, "Home") %> 
+
+</header>
+
+<body>
+  <% #embedded ruby %>
+
+  <%= @user.name %>, <%= @user.email %>
+</body>
