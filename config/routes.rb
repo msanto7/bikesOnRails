@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  # GET  
+  # GET
   get '/users/new'
   get '/pages/about'
   get '/default/index'
