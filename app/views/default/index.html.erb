@@ -9,7 +9,28 @@
     <div class="mx-auto text-center">
       <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
       <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
-      <a href="/signup" class="btn btn-primary js-scroll-trigger">Sign Up</a>
+
+
     </div>
   </div>
 </header>
+
+
+    <% if logged_in? %>
+
+      <div class="row">
+       <aside class="col-md-4">
+         <section class="user_info">
+           <%= render 'shared/user_info' %>
+         </section>
+         <section class="review_form">
+           <%= render 'shared/review_form' %>
+         </section>
+       </aside>
+      </div>
+
+    <% else %>
+
+      <a href="/signup" class="btn btn-primary js-scroll-trigger">Sign Up</a>
+
+    <% end %>

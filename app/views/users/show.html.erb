@@ -15,16 +15,17 @@
           <%= gravatar_for @user %>
           <%= @user.name %>
         </h1>
+
+        <div class="col-md-8">
+          <% if @user.reviews.any? %>
+            <h3>Bike Reviews (<%= @user.reviews.count %>)</h3>
+            <ol class="reviews">
+              <%= render @reviews %>
+            </ol>
+            <%= will_paginate @reviews %>
+          <% end %>
+        </div>
+
       </section>
     </aside>
-  </div>
-
-  <div class="col-md-8">
-    <% if @user.reviews.any? %>
-      <h3>Bike Reviews (<%= @user.reviews.count %>)</h3>
-      <ol class="reviews">
-        <%= render @reviews %>
-      </ol>
-      <%= will_paginate @reviews %>
-    <% end %>
   </div>

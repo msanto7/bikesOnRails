@@ -21,6 +21,6 @@ Rails.application.routes.draw do
 
   # Resources
   resources :users
-  resources: :reviews, only: [:create, :destroy]
+  resources :reviews, only: [:create, :destroy]
 
 end
