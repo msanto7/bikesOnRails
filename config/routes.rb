@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   # GET
-  get '/users/new'
+  #get '/users/new'
   get '/pages/about'
   get '/default/index'
   get '/default/signup'
@@ -11,7 +11,8 @@ Rails.application.routes.draw do
   post '/signup', to: 'users#create'
 
   root 'default#index'
-
+  
+  # Resources
   resources :users
 
 end
