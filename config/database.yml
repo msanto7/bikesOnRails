@@ -86,7 +86,8 @@ test:
 production:
   <<: *default
   database: cosc630RailsSite_production
-  #username: cosc630RailsSite
-  #password: <%= ENV['COSC630RAILSSITE_DATABASE_PASSWORD'] %>
-  username: postgres
-  password: ctm45SD#)
+  username: cosc630RailsSite
+  password: <%= ENV['COSC630RAILSSITE_DATABASE_PASSWORD'] %>
+
+  #username: postgres
+  #password: ctm45SD#)
