@@ -1,7 +1,7 @@
 
 <header class="masthead">
 <% provide(:title, "Log in") %>
-</header> 
+</header>
 <h1>Log in</h1>
 
 <div class="row">
@@ -13,6 +13,13 @@
 
       <%= f.label :password %>
       <%= f.password_field :password, class: 'form-control' %>
+
+
+      <%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+        <span>Remember me on this computer</span>
+      <% end %>
+
 
       <%= f.submit "Log in", class: "btn btn-primary" %>
     <% end %>
